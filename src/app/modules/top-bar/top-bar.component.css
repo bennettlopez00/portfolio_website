@@ -1,0 +1,54 @@
+#top-bar-component-main-grid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 5% 85%;
+    grid-template-rows: 20% 60% 20%;
+    border: 1px solid rgb(165, 164, 164);
+}
+
+    #top-bar-name-container {
+        grid-row: 2/3;
+        grid-column: 3/4;
+        font-size: 25px;
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    #top-bar-square-icon {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        height: 15px;
+        width: 15px;
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+
+
+/* Syles for smaller screens */
+
+
+
+    #top-bar-name-container-small {
+        grid-row: 2/3;
+        grid-column: 3/4;
+        font-size: 3vw;
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    #top-bar-square-icon-small {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        height: 10px;
+        width: 10px;
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+

@@ -1,0 +1,92 @@
+#profile-modal-main-component-grid.small {
+    display: grid;
+    grid-template-columns: min(90vw, 390px) ;
+    grid-template-rows: auto;
+    grid-gap: 40px;
+}
+
+    .small #profile-modal-profile-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 275px 100px 3px 100px 50px;
+        height: 528px;
+        background-color: #757780;
+        box-shadow: -10px 10px 50px 5px #3d3d3d;
+    }
+
+        .small #profile-modal-photo {
+            max-height: 200px;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            display: block;
+            margin: auto;
+        }
+
+        .small #profile-modal-name {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 90%;
+            color: black;
+        }
+
+        .small #profile-modal-accent-line {
+            background-color: white;
+            width: 75%;
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+
+        .small #profile-modal-description {
+            grid-column: 1/2;
+            grid-row: 4/5;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            padding-top: 40px;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        .small #profile-modal-links-container {
+            background-color: white;
+            grid-column: 1/2;
+            grid-row: 5/6;
+            display: grid;
+            grid-template-rows: 100%;
+        }
+
+            .small .profile-modal-link-image {
+                height: 30px;
+                display: block;
+                margin: auto;
+                padding-top: 10px;
+                cursor: pointer;
+            }
+
+    .small #profile-modal-description-section {
+        background-color: white;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding-left: 50px;
+        height: max(34vw, 400px);
+    }
+
+        .small #profile-modal-description-title { 
+            font-family: 'Heebo', sans-serif;
+            font-size: min(100px,20vw);
+        }
+
+        .small #profile-modal-description-subtitle {
+            line-height: 20%;
+            font-family: 'Nanum Gothic', sans-serif;
+            font-size: min(5vw, 25px);
+        }
+
+        .small #profile-modal-description-body {
+            line-height: 150%;
+            padding-top: min(75px, 5vw);
+            font-family: 'Nanum Gothic', sans-serif;
+            font-size: min(4vw, 17px);
+        }

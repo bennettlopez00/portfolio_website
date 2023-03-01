@@ -1,0 +1,30 @@
+<div
+    id="profile-modal-main-component-grid"
+    [class]="smallerScreen ? 'large' : 'small'"
+>
+    <div id="profile-modal-profile-container">
+        <img id="profile-modal-photo" src="../../../assets/Cover_Photo.png">
+        <div id="profile-modal-name" [innerHTML]="profileName"></div>    
+        <div id="profile-modal-accent-line"></div>
+        <div id="profile-modal-description">{{ profileDescription }}</div>
+        <div 
+            id="profile-modal-links-container"
+            [style.grid-template-columns]="'repeat(' + (profileLinks.length) + ',' + (100 / profileLinks.length) + '% )'"
+        >
+            <div
+                *ngFor="let profileItem of profileLinks; index as i;"
+            >
+                <img 
+                    class="profile-modal-link-image"
+                    [src]="profileLinkMap.get(profileItem)![0]"
+                    (click)="profileLinkClicked(profileLinkMap.get(profileItem)![1])"
+                >
+            </div>
+        </div>
+    </div>
+    <div id="profile-modal-description-section">
+        <div id="profile-modal-description-title">Hello</div>
+        <div id="profile-modal-description-subtitle">Here's who I am & what I do</div>
+        <div id="profile-modal-description-body">I am a hardowkring software engineer aiming to develop solutions with both proficiency, and integrity. I am motivated to utilize my strengths to achieve the highest level of efficiency and brilliance through software design and meticulous implementation.</div>
+    </div>
+</div>

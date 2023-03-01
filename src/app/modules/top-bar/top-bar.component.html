@@ -1,0 +1,14 @@
+<div id="top-bar-component-main-grid">
+
+    <div 
+        [id]="smallScreen ? 'top-bar-name-container' : 'top-bar-name-container-small'"
+        [innerHTML]="topBarCurrentName"
+    >
+    </div>
+    <div
+        [id]="smallScreen ? 'top-bar-square-icon' : 'top-bar-square-icon-small'"
+        [style.background-color]="boxColor"
+    >
+    </div>
+
+</div>

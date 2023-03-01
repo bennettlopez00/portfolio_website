@@ -1,0 +1,134 @@
+<div id="css-main-component-grid"
+[class]="smallScreen ? 'large' : 'small'">
+
+  <top-bar
+    id="main-component-top-bar"
+    [boxColor]="'#437C90'"
+    [smallScreen]="smallScreen"
+  >
+  </top-bar>
+
+  <div id="main-component-title-section">
+    <div id="main-component-title-section-accent-color"></div>
+    <profile-modal 
+      id="main-component-title-section-profile"
+      [smallerScreen]="smallScreen"
+      ></profile-modal>
+  </div>
+
+  <div
+    id="main-component-education-section"
+  >
+
+    <div id="education-section-accent">E D U C A T I O N</div>
+
+    <div
+      *ngFor="let item of [].constructor(4); index as i"
+      [id]="'education-section-line-' + (i + 1)"
+      class="abstract-line"
+    >
+    </div>
+
+    <timeline-modal 
+      id="education-section-one"
+      [title]="'SHELDON HIGHSCHOOL'"
+      [subtitle]="'Eugene Oregon<br>Graduated 2017'"
+      [description]="'Graduated though the International Highschool with a certificate of Spanish emersion. Graduated with an International Baccalaureate Diploma, and as a member of the National Honor Society'"
+    ></timeline-modal>
+    <timeline-modal 
+      id="education-section-two"
+      [title]="'GEORGE FOX UNIVERSITY'"
+      [subtitle]="'Newberg Oregon<br>Graduated May 2021'"
+      [description]="'Computer Science w/ Emphasis in Cyber Security'"
+    ></timeline-modal>
+  </div>
+
+
+  <div
+    id="main-component-experience-section"
+  >
+    <div id="experience-section-accent-color"> E X P E R I E N C E</div>
+
+    <div
+      *ngFor="let item of [].constructor(9); index as i"
+      [id]="'experience-section-line-' + (i + 1)"
+      class="abstract-line"
+    >
+    </div>
+
+    <timeline-modal 
+      id="experience-section-1"
+      [title]="'AQUATICS LEAD GUARD <br> MAINTENANCE ASSISTANT'"
+      [subtitle]="'Eugene Country Club <br> Eugene Oregon<br>2014 - 2021'"
+      [description]="'Lead Team Project Organizer / Independent Project Execution / Dynamic use of learned skills'"
+    ></timeline-modal >
+    <timeline-modal 
+      id="experience-section-2"
+      [title]="'APPLICATION SOFTWARE ENGINEER'"
+      [subtitle]="'HP Inc. <br> October 2021 - Present'"
+      [description]="'New Application architecture/code ideation, planning & development / High throughput cloud business logic solutions / UI/UX Internal tool interface production'"
+    ></timeline-modal >
+
+  </div>
+
+
+  <div
+    id="main-component-skill-section"
+  >
+
+    <div id="skill-section-accent-color"> P R O F E S S I O N A L<br> S K I L L S</div>
+
+    <div
+      *ngFor="let item of [].constructor(4); index as i"
+      [id]="'skill-section-line-' + (i + 1)"
+      class="abstract-line"
+    >
+    </div>
+
+    <timeline-modal 
+      id="skill-section-1"
+      [title]="'PROFESSIONAL'"
+      [subtitle]="'Python/Java Application Development<br>Angular<br>Amazon Web Services<br>Distributed and Parallel programing<br>SQL<br>Legacy Code Maintenance, Modification and Redesign<br><br><br><b>And academic experience (See Resume)</b>'"
+      [description]="''"
+    ></timeline-modal>
+
+
+  </div>
+
+
+  <div
+    id="main-component-carousel-section"
+  >
+    <div id="carousel-section-accent-color">P O R T F O L I O</div>
+    <carousel 
+      id="carousel-section-photo"
+      [currentCarouselIndex]="0"
+      (currentDescription)="updateDescription($event)"
+      (currentTitle)="updateTitle($event)"
+      [buttonPushEvent]="arrowButtonPressNotifier"
+      [carouselItems]="carouselItems"
+    >
+    </carousel>
+
+    <div id="carousel-section-button-left"  
+      (click)="onCarouselButtonClick(false)"
+    ><</div>
+    <div id="carousel-section-button-right" 
+      (click)="onCarouselButtonClick(true)" 
+    >></div>
+    <div id="carousel-section-description">
+      <div id="carousel-section-description-title">{{ carouselTitle }}</div>
+      <div id="carousel-section-description-body">{{ carouselDescription }}</div>
+    </div>
+  </div>
+
+  <top-bar
+    id="main-component-footer"
+    [boxColor]="'#437C90'"
+    [smallScreen]="smallScreen"
+    [topBarCurrentName]="'B E N N E T T &nbsp;&nbsp; L O P E Z  &nbsp;&nbsp;/ &nbsp;&nbsp;<i>2023-01-10</i>'"
+  ></top-bar>
+
+
+
+</div>
