@@ -19,6 +19,7 @@
     margin-left: 10px;
     margin-right: 10px;
     font-family: 'Heebo', sans-serif;
+    font-weight: 800;
     font-size: min(20px, 100%);
 }
 
@@ -28,7 +29,7 @@
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 14px;
     display: block;
     margin: auto;
@@ -40,6 +41,6 @@
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 12px;
 }

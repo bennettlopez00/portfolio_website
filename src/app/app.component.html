@@ -10,7 +10,8 @@
 
   <div id="main-component-title-section">
     <div id="main-component-title-section-accent-color"></div>
-    <profile-modal 
+    <profile-modal
+      class="fload-rand-one"
       id="main-component-title-section-profile"
       [smallerScreen]="smallScreen"
       ></profile-modal>
@@ -29,13 +30,15 @@
     >
     </div>
 
-    <timeline-modal 
+    <timeline-modal
+      class="timeline-modal"
       id="education-section-one"
       [title]="'SHELDON HIGHSCHOOL'"
       [subtitle]="'Eugene Oregon<br>Graduated 2017'"
       [description]="'Graduated though the International Highschool with a certificate of Spanish emersion. Graduated with an International Baccalaureate Diploma, and as a member of the National Honor Society'"
     ></timeline-modal>
-    <timeline-modal 
+    <timeline-modal
+      class="timeline-modal"
       id="education-section-two"
       [title]="'GEORGE FOX UNIVERSITY'"
       [subtitle]="'Newberg Oregon<br>Graduated May 2021'"
@@ -57,16 +60,18 @@
     </div>
 
     <timeline-modal 
+      class="timeline-modal"
       id="experience-section-1"
       [title]="'AQUATICS LEAD GUARD <br> MAINTENANCE ASSISTANT'"
       [subtitle]="'Eugene Country Club <br> Eugene Oregon<br>2014 - 2021'"
       [description]="'Lead Team Project Organizer / Independent Project Execution / Dynamic use of learned skills'"
     ></timeline-modal >
     <timeline-modal 
+      class="timeline-modal"
       id="experience-section-2"
       [title]="'APPLICATION SOFTWARE ENGINEER'"
       [subtitle]="'HP Inc. <br> October 2021 - Present'"
-      [description]="'New Application architecture/code ideation, planning & development / High throughput cloud business logic solutions / UI/UX Internal tool interface production'"
+      [description]="'New/Legacy application architecting, developing, deploying and supporting role. Focus on fullstack application development, utilizing AWS, parallel and distributed computing.'"
     ></timeline-modal >
 
   </div>
@@ -86,9 +91,10 @@
     </div>
 
     <timeline-modal 
+      class="timeline-modal"
       id="skill-section-1"
       [title]="'PROFESSIONAL'"
-      [subtitle]="'Python/Java Application Development<br>Angular<br>Amazon Web Services<br>Distributed and Parallel programing<br>SQL<br>Legacy Code Maintenance, Modification and Redesign<br><br><br><b>And academic experience (See Resume)</b>'"
+      [subtitle]="'<br>Collaborative Work Style<br>Interpersonal Communication<br>C/C++<br>Java<br>Python<br>SQL & NoSql<br>AWS<br>Distributed/Parallel Programming<br>HTML/CSS/JS/TS<br>Angular<br>Full Stack'"
       [description]="''"
     ></timeline-modal>
 
@@ -126,7 +132,9 @@
     id="main-component-footer"
     [boxColor]="'#437C90'"
     [smallScreen]="smallScreen"
-    [topBarCurrentName]="'B E N N E T T &nbsp;&nbsp; L O P E Z  &nbsp;&nbsp;/ &nbsp;&nbsp;<i>2023-01-10</i>'"
+
+    [topBarCurrenTitle]="'Bennett Lopez '"
+    [topBarCurrenSubtitle]="'&nbsp;&nbsp;&nbsp;&nbsp;/ &nbsp;&nbsp;<i>2023-01-10</i>'"
   ></top-bar>
 
 

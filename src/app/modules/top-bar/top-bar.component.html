@@ -1,14 +1,21 @@
 <div id="top-bar-component-main-grid">
 
-    <div 
-        [id]="smallScreen ? 'top-bar-name-container' : 'top-bar-name-container-small'"
-        [innerHTML]="topBarCurrentName"
-    >
+
+
+    <div id="name-container">
+        <div [id]="smallScreen ? 'top-bar-name-container' : 'top-bar-name-container-small'">
+            <div id="top-bar-name-title" [innerHTML]="displayTitle"></div>
+            <div id="top-bar-name-subtitle" [innerHTML]="displaySubtitle"></div>
+        </div>
+        <div [id]="smallScreen ? 'cursor' : 'cursor-small'" [innerHTML]="cursor">
+        </div>
     </div>
+
     <div
         [id]="smallScreen ? 'top-bar-square-icon' : 'top-bar-square-icon-small'"
         [style.background-color]="boxColor"
     >
     </div>
+    
 
 </div>

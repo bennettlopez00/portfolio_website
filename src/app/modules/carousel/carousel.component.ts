@@ -28,11 +28,6 @@ export class CarouselComponent {
   @Output() currentTitle: EventEmitter<string> = new EventEmitter<string>()
 
 
-
-
-
-
-
   ngOnInit() {
     if (this.buttonPushEvent != null) {
       this.buttonPushEvent.subscribe((event) => this.rotateCarousel(event))

@@ -10,7 +10,7 @@
         grid-template-columns: 100%;
         grid-template-rows: 275px 100px 3px 100px 50px;
         height: 528px;
-        background-color: #757780;
+        background-color:  #568386;
         box-shadow: -10px 10px 50px 5px #3d3d3d;
     }
 
@@ -29,7 +29,7 @@
             font-size: 30px;
             font-weight: bold;
             line-height: 90%;
-            color: black;
+            color: white;
         }
 
         .small #profile-modal-accent-line {
@@ -46,7 +46,8 @@
             color: white;
             font-size: 20px;
             padding-top: 40px;
-            font-family: 'Nanum Gothic', sans-serif;
+            font-family: 'Montserrat', sans-serif;
+            font-style:'ExtraLight';
         }
 
         .small #profile-modal-links-container {
@@ -75,18 +76,19 @@
 
         .small #profile-modal-description-title { 
             font-family: 'Heebo', sans-serif;
+            font-weight: 800;
             font-size: min(100px,20vw);
         }
 
         .small #profile-modal-description-subtitle {
             line-height: 20%;
-            font-family: 'Nanum Gothic', sans-serif;
+            font-family: 'Rubik', sans-serif;
             font-size: min(5vw, 25px);
         }
 
         .small #profile-modal-description-body {
             line-height: 150%;
             padding-top: min(75px, 5vw);
-            font-family: 'Nanum Gothic', sans-serif;
+            font-family: 'Rubik', sans-serif;
             font-size: min(4vw, 17px);
         }

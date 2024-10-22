@@ -2,43 +2,63 @@
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 10% 5% 85%;
+    grid-template-columns: 10% 30px 85%;
     grid-template-rows: 20% 60% 20%;
-    border: 1px solid rgb(165, 164, 164);
 }
 
-    #top-bar-name-container {
+    #name-container {
         grid-row: 2/3;
         grid-column: 3/4;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #top-bar-name-container {
+        display: inline-flex;
         font-size: 25px;
-        display: block;
-        margin-top: auto;
-        margin-bottom: auto;
+    }
+
+    #cursor {
+        font-size: 25px;
     }
 
     #top-bar-square-icon {
         grid-row: 2/3;
         grid-column: 2/3;
-        height: 15px;
-        width: 15px;
+        height: 17px;
+        width: 17px;
         display: block;
         margin-top: auto;
         margin-bottom: auto;
     }
 
+    #top-bar-name-title {
+        font-family: 'Heebo', sans-serif;
+        font-weight: 800;
+        display: block;
+        margin: auto;
+    }
 
+    #top-bar-name-subtitle {
+        font-family: 'Montserrat', sans-serif;
+        font-style:'ExtraLight';
+        font-weight: 100;
+        font-size: 15px;
+        display: block;
+        margin: auto;
+    }
 
 /* Syles for smaller screens */
 
 
-
     #top-bar-name-container-small {
-        grid-row: 2/3;
-        grid-column: 3/4;
+        display: inline-flex;
         font-size: 3vw;
-        display: block;
-        margin-top: auto;
-        margin-bottom: auto;
+    }
+
+    #cursor-small {
+        font-size: 3vw;
     }
 
     #top-bar-square-icon-small {
@@ -51,4 +71,4 @@
         margin-bottom: auto;
     }
 
-
+    
